@@ -1,25 +1,33 @@
 var express = require('express');
-var Twitter = require('Twitter');
+//var twit = require('twit');
 //loads the access tokens into the environment
 require('dotenv').load();
 
 var router = express.Router();
+//
+//var T = new twit({
+//  consumer_key: 'process.env.TWITTER_CONSUMER_KEY',
+//  consumer_secret: 'process.env.TWITTER_CONSUMER_SECRET',
+//  app_only_auth: true
+//});
 
-var client = new Twitter({
-  consumer_key: 'process.env.TWITTER_CONSUMER_KEY',
-  consumer_secret: 'process.env.TWITTER_CONSUMER_SECRET',
-  bearer_token: 'process.env.TWITTER_BEARER_ACCESS_TOKEN'
-});
+/*
+ * Wrapper function for making calls to twitter.
+ * Params should be a json object, with a mandatory q= field
+ * Returns data to the callback function.
+ */
+//twitQuery = function (params, callback)
+//{
+//  T.get('search/tweets', params, function(err, reply) {
+//    if(!err) return callback(reply);
+//
+//  });
+//}
 
 
-client.get('search/tweets', {q: "bernie sanders"}, function(error, tweets, response){
-  console.log("error");
-  //if(error) throw error;
-  //console.log(tweets);  // The favorites.
-  console.log(response);  // Raw response object.
-});
+function returnError() {
 
-
+}
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
