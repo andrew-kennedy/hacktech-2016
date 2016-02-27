@@ -1,1 +1,4 @@
-This is the readme for our super awesome hack and stuff!!
+Hacktech 2016
+-------------
+
+A webapp for Sentiment Analysis based on Twitter feed
