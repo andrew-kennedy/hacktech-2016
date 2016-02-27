@@ -1,0 +1,3 @@
+- page of d3 graphs, one graph per candidate
+- plot points at troughs and peaks of sentiment, correlating them to top articles mentioning those candidates
+- show top influencers who tweeted during those peaks/troughs, show those tweets
