@@ -19,12 +19,13 @@ var insertGraph = function () {
             legend: ['US', 'CA', 'DE'],
             target: '.graph-container',
             
-            mouseover: function(d, i) {
-                
-            }
         });
     });
 };
 
 insertGraph();
 
+/*
+    TODO for candidates
+    legend: ['Bernie Sanders', 'Hillary Clinton', 'Donald Trump', 'Marco Rubio', 'Ted Cruz', 'John Kasich', 'Ben Carson']
+*/
