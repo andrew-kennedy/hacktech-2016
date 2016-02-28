@@ -5,7 +5,6 @@ var twit = require('twit');
 require('dotenv').load();
 
 var azure = require('azure-storage');
-require('dotenv').load();
 
 var blobService = azure.createBlobService();
 var T = new twit({
@@ -128,7 +127,7 @@ updateDatabase = function(data) {
     console.log("limit: ",limit, " remaining: ", remaining, " reset: ", reset);
 }
 
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
     //call an order
     checkRemainingSearches(updateDatabase);
 });

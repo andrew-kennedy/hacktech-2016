@@ -6,7 +6,8 @@ html {
     //font-family: 400 1em/1.4 'Open Sans', sans-serif;
     font-family: 'Open Sans';
     text-rendering: optimizeLegibility;
-    padding: 50px;
+    background-color: "#D3D3D3";
+    padding: 0px 50px 0px 50px;
 }
 
 .top-page {
@@ -17,14 +18,13 @@ html {
 }
 
 .graph-container {
-    flex-grow: 3;
+    flex: 3;
     color: red;
     margin: 5px;
     align-self: center;
 }
 
 .graph-info {
-    flex: 1;
     color: black;
 }
 
