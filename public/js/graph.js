@@ -6,11 +6,11 @@ var insertGraph = function () {
             data[i] = MG.convert.date(data[i], 'date');
         }
 
-        console.log(data);
+        //console.log(data);
         MG.data_graphic({
             title: "Labeling Lines",
             data: data,
-            width: 600,
+            full_width : true,
             height: 200,
             animate_on_load: true,
             missing_is_hidden: true,
