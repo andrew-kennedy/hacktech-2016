@@ -6,7 +6,7 @@ html {
     //font-family: 400 1em/1.4 'Open Sans', sans-serif;
     font-family: 'Open Sans';
     text-rendering: optimizeLegibility;
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
 }
 
 .top-page {
@@ -24,7 +24,6 @@ html {
 }
 
 .graph-info {
-    flex: 1;
     color: black;
 }
 
