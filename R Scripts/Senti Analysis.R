@@ -1,6 +1,6 @@
 # Get all relevant libraries
-library(twitteR)
-library(ROAuth)
+#library(twitteR)
+#library(ROAuth)
 require(RCurl)
 library(stringr)
 library(tm)
@@ -11,21 +11,20 @@ library(tm)
 library(wordcloud)
 
 
-# Setup ROauth
+tweet_x=tweet_search("trump",result_type="recent", geocode="", max_id="", lang="", n=10000, return_df=TRUE)
 
-key<-"ujDcq1oEiz0N5fBEF8FKnyVCP"
-secret<-"T9Yqbo9s3UM5JJzfQCFmDFLA3SBjLwXPGvNWcM1ttGFc4ULpnw"
-setwd("data_dump/")
+# Create corpus
+corpus=Corpus(VectorSource(tweet_x$status))
 
-download.file(url="http://curl.haxx.se/ca/cacert.pem",destfile="cacert.pem",method="auto")
-authenticate <- OAuthFactory$new(consumerKey=key,
-                                 consumerSecret=secret,
-                                 requestURL="https://api.twitter.com/oauth/request_token",
-                                 accessURL="https://api.twitter.com/oauth/access_token",
-                                 authURL="https://api.twitter.com/oauth/authorize")
-setup_twitter_oauth(key, secret, access_token = NULL, access_secret = NULL)
-save(authenticate, file="twitter authentication.Rdata")
+# Convert to lower-case
+corpus=tm_map(corpus,tolower)
 
-N=2000
-donald=do.call++(rbind,lapply(1:length(lats), function(i) searchTwitter('Donald+Trump',
-                                                                      lang="en",n=N,resultType="recent",sep=",")))
+# Remove stopwords
+corpus=tm_map(corpus,function(x) removeWords(x,stopwords()))
+
+# convert corpus to a Plain Text Document
+corpus=tm_map(corpus,PlainTextDocument)
+
+col=brewer.pal(6,"Dark2")
+wordcloud(corpus, min.freq=25, scale=c(5,2),rot.per = 0.25,
+          random.color=T, max.word=45, random.order=F,colors=col)
