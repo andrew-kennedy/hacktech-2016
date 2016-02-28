@@ -12,6 +12,16 @@ var T = new twit({
     app_only_auth: true
 });
 
+var tableService = azure.createTableService();
+tableService.createTableIfNotExists('candidateTweets', function(error, result, response) {
+    if (!error) {
+        // result contains true if created; false if already exists
+    }
+});
+
+
+var entGen = azure.TableUtilities.entityGenerator;
+
 
 //initialize the last read id.
 //democrats
@@ -62,7 +72,18 @@ processData =  function (params, data) {
 
         text = text.replace(/(\r\n|\n|\r)/gm," ");
 
+        var entity = {
+            PartitionKey: entGen.String(params),
+            RowKey: entGen.Int32(id),
+            tweetText: entGen.String(text),
+            timeOfTweet: entGen.DateTime(time),
+        };
+        tableService.insertEntity('candidateTweets', entity, function(error, result, response) {
+            if (!error)
+            {
 
+            }
+        });
 
         //TODO: send this data somewhere useful
     }
