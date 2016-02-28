@@ -1,6 +1,10 @@
 @import 'nib'
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
 
 
 a {
@@ -11,14 +15,15 @@ html {
     font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility;
     background-color: "#D3D3D3";
-    padding: 0px 50px 0px 50px;
+    padding: 25px 50px 0px 50px;
 }
 
 .top-page {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
-    background-color: blanchedalmond;
+    padding: 20px 0px 20px 0px;
+    //background-color: blanchedalmond;
 }
 
 .graph-container {
@@ -30,7 +35,15 @@ html {
 
 .graph-info {
     color: black;
-    flex: 1;
+    flex: 5;
+    margin: auto;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 #info-panels {
@@ -38,9 +51,27 @@ html {
     display: flex;
     flex-direction: column;
     color: bisque;
-    background-color: aliceblue;
+}
+
+#graph-info-space {
+    flex: 1;
+    background-color: white;
 }
 
 .mg-header {
     font-family: 'Open Sans', sans-serif;
 }
+
+.mainTitle {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+#candidate-panel-name {
+    flex = 3;
+}
+#candidate-panel-ratio {
+    flex = 2;
+}
+
