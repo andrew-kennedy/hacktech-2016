@@ -129,7 +129,7 @@ updateDatabase = function(data) {
     console.log("limit: ",limit, " remaining: ", remaining, " reset: ", reset);
 }
 
-router.push('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
     //call an order
     checkRemainingSearches(updateDatabase);
 });
