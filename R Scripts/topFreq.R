@@ -11,13 +11,13 @@
 
 library(tm)
 library(SnowballCC)
-library(RColorBrewer)
-library(ggplot2)
+#library(RColorBrewer)
+#library(ggplot2)
 library(wordcloud)
-library(biclust)
-library(cluster)
-library(fpc)
-library(igraph)
+#library(biclust)
+#library(cluster)
+#library(fpc)
+#library(igraph)
 
 input_data=tweet_x$status
 # Create Corpus
@@ -51,12 +51,11 @@ tdm <- TermDocumentMatrix(docs)
 
 # Exploring data
 freq <- colSums(as.matrix(dtm))   
-length(freq)
-
-ord<-order(freq)
+#length(freq)
+#ord<-order(freq)
 
 dtms <- removeSparseTerms(dtm, 0.1) # This makes a matrix that is 10% empty space, maximum.   
 #inspect(dtms)
 
-freq <- sort(colSums(as.matrix(dtm)), decreasing=TRUE)
-filtered_freq<-findFreqTerms(freq,highfreq = length(input_data)-1)
+# Get rid of terms with frequncy > length of data table
+top_10=head(sort(freq[sapply(freq, function(x) sum(x) < len(input_data))],decreasing = TRUE),10)
