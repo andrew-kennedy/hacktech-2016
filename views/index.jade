@@ -4,9 +4,16 @@ block content
   .top-page
     .graph-container
     #info-panels
-      #candidates.graph-info
-        span This is where the candidate info will go! Marvelous!
-      #keywords.graph-info
-        span This is where the word cloud goes! Spiffy!
+        #candidates.graph-info
+            #candidate-panel-name
+                span I AM TRUMP
+            #candidate-panel-ratio
+                span 100% to 0% (Everyone likes me, duh!)
+        #graph-info-space
+        #keywords.graph-info
+            #graph-word-cloud
+                span This is where the word cloud goes! Spiffy!
+        
+        
 block scripts
   script(src='/js/graph.js')
