@@ -9,9 +9,9 @@ colnames(all_tweets) <- c("Candidate", "Tweet_text","Tstamp")
 d<-all_tweets
 d<-d[!(d$Candidate==""),]
 d$Tstamp<-(strsplit(as.character(d$Tstamp), " "))
-for(i in seq(docs))   
+for(i in length(d$Tstamp))   
 {   
-  time[[i]]<-unlist(strsplit(as.character(d$Tstamp[i]), " "))[3]
+  time[i]<-unlist(as.character(d$Tstamp[i]), " ")[3]
 }   
 
 
