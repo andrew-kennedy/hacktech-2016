@@ -17,17 +17,23 @@ var insertGraph = function () {
             transition_on_update: true,
             legend: ['US', 'CA', 'DE'],
             target: '.graph-container',
-            
-            
+
+
             mouseover: function(d, i) {
-                
+
             var numCandidates = 3; //7;
                 for (var j = 1; j <= numCandidates; j++) {
                     var id ="c"+j;
-                    document.getElementsByClassName(id)[0].innerHTML = d.values[j-1].value;
+                    var domElement = document.getElementsByClassName(id)[0];
+                    document.getElementsByClassName(id)[0].style.visibility = "visible";
+
+
+                    domElement.innerHTML = d.values[j-1].value;
+
+
                 }
             }
-            
+
         });
     });
 };
