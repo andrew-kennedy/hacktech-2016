@@ -1,7 +1,7 @@
 .env
 .tern-port
 #ignore css because of nib
-*.css
+public/stylesheets/*.css
 # Created by https://www.gitignore.io/api/osx,,windows,,linux,,node
 
 ### OSX ###
