@@ -4,9 +4,7 @@ var twit = require('twit');
 //loads the access tokens into the environment
 require('dotenv').load();
 
-var fs = require('fs');
 var azure = require('azure-storage');
-require('dotenv').load();
 
 var blobService = azure.createBlobService();
 var T = new twit({
