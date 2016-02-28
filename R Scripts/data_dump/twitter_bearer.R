@@ -5,8 +5,7 @@ app_only_auth = function() {
   # using application-only authentication.
   
   bearer_token = "AAAAAAAAAAAAAAAAAAAAAJZ7twAAAAAAV15vMv5coEo%2BjofHaFYMU3jLguk%3Dc2aoNRtYAytXZ5EVBMzww2lBgTOhPx8tKjftqBVEdMbMEiB1dC"
-  GET_headers = c(
-                  sprintf("Authorization: Bearer %s", bearer_token))
+  GET_headers = c(sprintf("Authorization: Bearer %s", bearer_token))
   
   return(GET_headers)
 }
@@ -20,8 +19,7 @@ search_rate_limit = function() {
   base_url = "https://api.twitter.com/1.1/application/rate_limit_status.json"
   full_url = URLencode(sprintf("%s?resources=search", base_url))
   
-  rate_limit_results = GET(url=full_url,
-                           config=add_headers(GET_headers))
+  rate_limit_results = GET(url=full_url,add_headers(Authorization="bearer AAAAAAAAAAAAAAAAAAAAAJZ7twAAAAAAV15vMv5coEo%2BjofHaFYMU3jLguk%3Dc2aoNRtYAytXZ5EVBMzww2lBgTOhPx8tKjftqBVEdMbMEiB1dC"))
   
   results_content = content(rate_limit_results)$resources$search$"/search/tweets"
   remaining = results_content$remaining
@@ -250,7 +248,7 @@ tweet_search = function(search_terms, result_type="recent", geocode="", max_id="
                                  count_str))
     
     search_results = GET(url=full_url,
-                         config=add_headers(GET_headers))
+                         config=add_headers(Authorization="bearer AAAAAAAAAAAAAAAAAAAAAJZ7twAAAAAAV15vMv5coEo%2BjofHaFYMU3jLguk%3Dc2aoNRtYAytXZ5EVBMzww2lBgTOhPx8tKjftqBVEdMbMEiB1dC"))
     
     
     if (return_df) {
