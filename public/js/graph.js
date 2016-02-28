@@ -16,6 +16,7 @@ var insertGraph = function () {
             width: 600,
             height: 200,
             animate_on_load: true,
+            transition_on_update: true,
             legend: ['US', 'CA', 'DE'],
             target: '.graph-container'
         });
