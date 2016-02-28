@@ -35,18 +35,18 @@ twitQuery = function (params, callback)
   T.get('search/tweets', { q: params, count: 100, lang: 'en' }, function(err, data, response) {
     if(err) console.log(err);
     callback(data);
-  })
-}
+  });
+};
 
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Polisense' });
 });
 
 
 router.post('/update', function(req, res, next) {
   //call an order
-  twitQuery
+    // twitQuery();
 });
 
 module.exports = router;
