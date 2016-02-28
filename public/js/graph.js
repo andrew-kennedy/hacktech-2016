@@ -6,7 +6,7 @@ var insertGraph = function () {
             data[i] = MG.convert.date(data[i], 'date');
         }
         MG.data_graphic({
-            title: "Labeling Lines",
+            title: "How Twitter Feels About The Election",
             data: data,
             full_width : true,
             height: 200,

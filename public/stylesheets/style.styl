@@ -7,6 +7,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 
+
+bgcolor {
+    background-color: rgba(198, 198, 198, 0.54);
+}
+
 a {
   color: #00B7FF;
 }
@@ -14,7 +19,6 @@ a {
 html {
     font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: "#D3D3D3";
     padding: 25px 50px 0px 50px;
 }
 
@@ -22,9 +26,9 @@ html {
     display: flex;
     flex-direction: row;
     padding: 20px 0px 20px 0px;
-    position: relative;
+    /*position: relative;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(50%);*/
     
     //background-color: blanchedalmond;
 }
@@ -84,4 +88,35 @@ svg {
 }
 #top-page-divider {
     width : 20px;
+}
+
+
+#candidate-list-container {
+    align-self : center;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.candidate {
+    flex : 1;
+    margin: 6px;
+    border-radius: 10px;
+    flex-direction: column;
+    min-width: 100px;
+    max-width:20%;
+}
+
+.republican {
+    background-color: rgba(145, 63, 63, 0.21);
+}
+
+.democratic {
+    background-color : rgba(0, 0, 255, 0.28);
+}
+
+
+.candidate-pic {
+    align-self: center;
 }
