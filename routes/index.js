@@ -112,7 +112,7 @@ checkRemainingSearches = function(callback)
   });
 };
 
-checkRemainingSearches(function(data) {
+ updateDatabase = function(data) {
   var limit = data['resources']['search']['/search/tweets']['limit'];
   var remaining = data['resources']['search']['/search/tweets']['remaining'];
   var reset = data['resources']['search']['/search/tweets']['reset'];
@@ -129,7 +129,7 @@ checkRemainingSearches(function(data) {
 
   }
   console.log("limit: ",limit, " remaining: ", remaining, " reset: ", reset);
-});
+}
 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Polisense' });
@@ -138,7 +138,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/update', function(req, res, next) {
   //call an order
-  checkRemainingSearches();
+  checkRemainingSearches(updateDatabase);
 });
 
 
