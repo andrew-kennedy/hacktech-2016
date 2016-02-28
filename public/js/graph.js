@@ -2,8 +2,9 @@
 
 var insertGraph = function () {
     d3.json('data/fake.json', function(data) {
+        var format = d3.time.format("%a %b %e %H:%M:%S %Z %Y");
         for (var i = 0; i < data.length; i++) {
-            data[i] = MG.convert.date(data[i], 'date');
+            data[i] = MG.convert.date(data[i], 'date', format);
         }
         MG.data_graphic({
             title: "How Twitter Feels About The Election",
@@ -15,7 +16,7 @@ var insertGraph = function () {
             brushing: true,
             brushing_history: true,
             transition_on_update: true,
-            legend: ['US', 'CA', 'DE'],
+            legend: ['Sanders', 'Clinton', 'Trump', 'Rubio', 'Cruz', 'Kasich', 'Carson'],
             show_rollover_text: false,
             target: '.graph-container',
 
