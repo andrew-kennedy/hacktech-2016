@@ -10,7 +10,6 @@ var insertGraph = function () {
             data: data,
             full_width : true,
             height: 200,
-            full_width: true,
             animate_on_load: true,
             missing_is_hidden: true,
             brushing: true,
@@ -18,6 +17,16 @@ var insertGraph = function () {
             transition_on_update: true,
             legend: ['US', 'CA', 'DE'],
             target: '.graph-container',
+            
+            
+            mouseover: function(d, i) {
+                
+            var numCandidates = 3; //7;
+                for (var j = 1; j <= numCandidates; j++) {
+                    var id ="c"+j;
+                    document.getElementsByClassName(id)[0].innerHTML = d.values[j-1].value;
+                }
+            }
             
         });
     });
