@@ -17,7 +17,11 @@ var insertGraph = function () {
             brushing_history: true,
             transition_on_update: true,
             legend: ['US', 'CA', 'DE'],
-            target: '.graph-container'
+            target: '.graph-container',
+            
+            mouseover: function(d, i) {
+                
+            }
         });
     });
 };
