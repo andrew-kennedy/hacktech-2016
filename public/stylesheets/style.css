@@ -6,3 +6,21 @@ body {
 a {
   color: #00B7FF;
 }
+
+.top-page {
+    display: -webkit-flex;
+    display: flex;
+    color: aliceblue;
+}
+
+.graph-container {
+    color: red;
+}
+
+.graph-info {
+    color: black;
+}
+
+#info-panels {
+    color: bisque;
+}
