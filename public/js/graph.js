@@ -16,18 +16,24 @@ var insertGraph = function () {
             brushing_history: true,
             transition_on_update: true,
             legend: ['US', 'CA', 'DE'],
+            show_rollover_text: false,
             target: '.graph-container',
-            
-            
+
+
             mouseover: function(d, i) {
-                
             var numCandidates = 7;
                 for (var j = 1; j <= numCandidates; j++) {
                     var id ="c"+j;
-                    document.getElementsByClassName(id)[0].innerHTML = d.values[j-1].value;
+                    var domElement = document.getElementsByClassName(id)[0];
+                    document.getElementsByClassName(id)[0].style.visibility = "visible";
+
+
+                    domElement.innerHTML = d.values[j-1].value;
+
+
                 }
             }
-            
+
         });
     });
 };
