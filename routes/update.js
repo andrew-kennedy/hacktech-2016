@@ -14,7 +14,7 @@ var T = new twit({
 });
 
 var tableService = azure.createTableService();
-tableService.createTableIfNotExists('candidateTweets', function(error, result, response) {
+tableService.createTableIfNotExists('rawCandidateTweets', function(error, result, response) {
     if (!error) {
         // result contains true if created; false if already exists
     }
@@ -69,18 +69,18 @@ processData =  function (params, data) {
         if(data['statuses'][i] != undefined) {
             text = data['statuses'][i]['text'];
             id = data['statuses'][i]['id_str'];
-            time = data['statuses'][i]['created_at'];
-
+            mytime = data['statuses'][i]['created_at'];
+            console.log( data['statuses'][i]);
 
             text = text.replace(/(\r\n|\n|\r)/gm, " ");
             var entity = {
                 PartitionKey: entGen.String(params),
                 RowKey: entGen.String(id),
                 tweetText: entGen.String(text),
-                timeOfTweet: entGen.String(time),
+                timeOfTweet: entGen.String(mytime),
             };
             //console.log(entity);
-            tableService.insertEntity('candidateTweets', entity, function (error, result, response) {
+            tableService.insertEntity('rawCandidateTweets', entity, function (error, result, response) {
                 if (!error) {
                 }
 
