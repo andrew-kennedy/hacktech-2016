@@ -69,27 +69,32 @@ processData =  function (params, data) {
     kasich_since_id = max_id;
   else if(params == carson)
     carson_since_id = max_id;
+  //console.log("statduses: ", data['statuses'][1]['id_str']);
+  //console.log("count: ", count);
+  var i = 0;
+  for (i = 0; i < count; i++) {
+    if(data['statuses'][i] != undefined) {
+      text = data['statuses'][i]['text'];
+      id = data['statuses'][i]['id_str'];
+      time = data['statuses'][i]['created_at'];
 
-  for (var i = 0; i < count; i++) {
-    text = data['statuses'][i]['text'];
-    id = data['statuses'][i]['id'];
-    time = data['statuses'][i]['created_at'];
 
+      text = text.replace(/(\r\n|\n|\r)/gm, " ");
 
-    text = text.replace(/(\r\n|\n|\r)/gm," ");
+      var entity = {
+        PartitionKey: entGen.String(params),
+        RowKey: entGen.Int32(id),
+        tweetText: entGen.String(text),
+        timeOfTweet: entGen.DateTime(time),
+      };
+      tableService.insertEntity('candidateTweets', entity, function (error, result, response) {
+        if (!error) {
 
-    var entity = {
-      PartitionKey: entGen.String(params),
-      RowKey: entGen.String(id),
-      tweetText: entGen.String(text),
-      timeOfTweet: entGen.DateTime(time),
-    };
-    tableService.insertEntity('candidateTweets', entity, function(error, result, response) {
-      if (!error)
-      {
-
-      }
-    });
+        }
+      });
+    }
+    else
+    console.log("unexpectedly undefined for param: ", params);
 
     //TODO: send this data somewhere useful
   }
@@ -119,8 +124,8 @@ checkRemainingSearches(function(data) {
   var limit = data['resources']['search']['/search/tweets']['limit'];
   var remaining = data['resources']['search']['/search/tweets']['remaining'];
   var reset = data['resources']['search']['/search/tweets']['reset'];
-  for(var i = remaining; remaining >= 7; remaining -= 7)
-  {
+  //for(var i = remaining; remaining >= 7; remaining -= 7)
+  //{
     twitQuery(clinton);
     twitQuery(sanders);
 
@@ -130,7 +135,7 @@ checkRemainingSearches(function(data) {
     twitQuery(kasich);
     twitQuery(carson);
 
-  }
+  //}
   console.log("limit: ",limit, " remaining: ", remaining, " reset: ", reset);
 });
 
