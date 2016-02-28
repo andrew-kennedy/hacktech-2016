@@ -7,7 +7,6 @@ var router = express.Router();
 
 
 var fs = require('fs');
-var twit = require('twit');
 var azure = require('azure-storage');
 require('dotenv').load();
 
@@ -69,8 +68,6 @@ processData =  function (params, data) {
     kasich_since_id = max_id;
   else if(params == carson)
     carson_since_id = max_id;
-  //console.log("statduses: ", data['statuses'][1]['id_str']);
-  //console.log("count: ", count);
   var i = 0;
   for (i = 0; i < count; i++) {
     if(data['statuses'][i] != undefined) {
@@ -80,26 +77,21 @@ processData =  function (params, data) {
 
 
       text = text.replace(/(\r\n|\n|\r)/gm, " ");
-
       var entity = {
         PartitionKey: entGen.String(params),
-        RowKey: entGen.Int32(id),
+        RowKey: entGen.String(id),
         tweetText: entGen.String(text),
-        timeOfTweet: entGen.DateTime(time),
+        timeOfTweet: entGen.String(time),
       };
+      //console.log(entity);
       tableService.insertEntity('candidateTweets', entity, function (error, result, response) {
         if (!error) {
-
         }
+
       });
     }
-    else
-    console.log("unexpectedly undefined for param: ", params);
-
-    //TODO: send this data somewhere useful
   }
 
-  //console.log(data);
 };
 
 
@@ -124,8 +116,8 @@ checkRemainingSearches(function(data) {
   var limit = data['resources']['search']['/search/tweets']['limit'];
   var remaining = data['resources']['search']['/search/tweets']['remaining'];
   var reset = data['resources']['search']['/search/tweets']['reset'];
-  //for(var i = remaining; remaining >= 7; remaining -= 7)
-  //{
+  for(var i = remaining; remaining >= 7; remaining -= 7)
+  {
     twitQuery(clinton);
     twitQuery(sanders);
 
@@ -135,7 +127,7 @@ checkRemainingSearches(function(data) {
     twitQuery(kasich);
     twitQuery(carson);
 
-  //}
+  }
   console.log("limit: ",limit, " remaining: ", remaining, " reset: ", reset);
 });
 
