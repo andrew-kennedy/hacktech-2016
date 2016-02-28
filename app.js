@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var stylus = require('stylus');
 var nib = require('nib');
 
+
 var routes = require('./routes/index');
 var update = require('./routes/update');
 var query = require('./routes/query');
@@ -41,6 +42,9 @@ app.use('/bower_components',  express.static(path.join(__dirname, 'bower_compone
 app.use('/', routes);
 app.use('/update', update);
 app.use('/query', query);
+
+//static server
+app.use(express.static('static'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
