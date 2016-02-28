@@ -10,6 +10,7 @@ var insertGraph = function () {
             data: data,
             full_width : true,
             height: 200,
+            full_width: true,
             animate_on_load: true,
             missing_is_hidden: true,
             brushing: true,
