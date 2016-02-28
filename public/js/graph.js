@@ -4,7 +4,7 @@ var insertGraph = function () {
     d3.json('data/fake.json', function(data) {
         var format = d3.time.format("%a %b %e %H:%M:%S %Z %Y");
         for (var i = 0; i < data.length; i++) {
-            data[i] = MG.convert.date(data[i], 'date', format);
+            data[i] = MG.convert.date(data[i], 'date', "%a %b %e %H:%M:%S %Z %Y");
         }
         MG.data_graphic({
             title: "How Twitter Feels About The Election",
@@ -28,8 +28,8 @@ var insertGraph = function () {
                     var domElement = document.getElementsByClassName(id)[0];
                     document.getElementsByClassName(id)[0].style.visibility = "visible";
 
-
-                    domElement.innerHTML = d.values[j-1].value;
+                    console.log(domElement.innerHTML);
+                    domElement.innerHTML = d.values[j-1].value.toFixed(2);
 
 
                 }
