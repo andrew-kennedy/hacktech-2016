@@ -21,7 +21,7 @@ var insertGraph = function () {
             
             mouseover: function(d, i) {
                 
-            var numCandidates = 3; //7;
+            var numCandidates = 7;
                 for (var j = 1; j <= numCandidates; j++) {
                     var id ="c"+j;
                     document.getElementsByClassName(id)[0].innerHTML = d.values[j-1].value;
