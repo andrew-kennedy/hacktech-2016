@@ -1,0 +1,3376 @@
+PartitionKey,Scaled Sentiment Index
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+Donald Trump,61.28647901
+Donald Trump,10.00749968
+Donald Trump,-63.69942688
+Donald Trump,-34.00692533
+Donald Trump,-63.69942688
+Donald Trump,0.350210136
+Donald Trump,-5.22177278
+Donald Trump,-27.08088529
+Donald Trump,-14.71118126
+Donald Trump,-84.33460729
+Donald Trump,10.00749968
+Donald Trump,60.25373524
+Donald Trump,-63.69942688
+Donald Trump,-63.69942688
+Donald Trump,-26.09570208
+Donald Trump,13.08594993
+Donald Trump,-76.78898978
+Donald Trump,-15.06474635
+Donald Trump,-16.12612967
+Donald Trump,35.93101969
+Donald Trump,-5.571295656
+Donald Trump,46.09762874
+Donald Trump,0.697152872
+Donald Trump,5.883318953
+Donald Trump,-1.299960982
+Donald Trump,-64.81550915
+Donald Trump,54.5017446
+Donald Trump,-70.41251942
+Donald Trump,-30.40247067
+Donald Trump,68.77894564
+Donald Trump,25.27237806
+Donald Trump,239.7438806
+Donald Trump,-15.06466035
+Donald Trump,66.26588993
+Donald Trump,-24.66458479
+Donald Trump,-150.5668702
+Donald Trump,15.81169514
+Donald Trump,137.9022547
+Donald Trump,-15.06474635
+Donald Trump,-0.344105361
+Donald Trump,-114.9624954
+Donald Trump,-47.462524
+Donald Trump,-63.69942688
+Donald Trump,61.20709673
+Donald Trump,-21.45291335
+Donald Trump,-12.94576392
+Donald Trump,65.95094092
+Donald Trump,-85.47047063
+Donald Trump,63.10917545
+Donald Trump,-50.39597042
+Donald Trump,-19.31836407
+Donald Trump,-63.69942688
+Donald Trump,-137.1783551
+Donald Trump,-21.45291335
+Donald Trump,-82.44379517
+Donald Trump,5.883404957
+Donald Trump,-27.88769486
+Donald Trump,-5.920990542
+Donald Trump,-21.80923059
+Donald Trump,-70.78663963
+Donald Trump,-78.67094342
+Donald Trump,-2.431008065
+Donald Trump,63.10917545
+Donald Trump,77.488464
+Donald Trump,-66.21213858
+Donald Trump,-97.64950236
+Donald Trump,-53.70620319
+Donald Trump,65.95094092
+Donald Trump,-82.44379517
+Donald Trump,25.27237806
+Donald Trump,-59.98746641
+Donald Trump,-40.89340323
+Donald Trump,-34.72945035
+Donald Trump,-27.17050213
+Donald Trump,-29.32397243
+Donald Trump,-152.4448676
+Donald Trump,-97.64950236
+Donald Trump,-98.03187901
+Donald Trump,22.24501457
+Donald Trump,12.74451149
+Donald Trump,-26.09570208
+Donald Trump,34.27654834
+Donald Trump,-0.69165013
+Donald Trump,77.79704867
+Donald Trump,46.09762874
+Donald Trump,18.86615009
+Donald Trump,-57.02692853
+Donald Trump,49.42428839
+Donald Trump,-80.55590722
+Donald Trump,43.48910786
+Donald Trump,34.60775222
+Donald Trump,-6.620810336
+Donald Trump,100.1493118
+Donald Trump,-2.779240871
+Donald Trump,74.70363361
+Donald Trump,-80.55590722
+Donald Trump,-1.299960982
+Donald Trump,-0.865379512
+Donald Trump,-125.4480096
+Donald Trump,41.52579383
+Donald Trump,-85.84932109
+Donald Trump,-27.88769486
+Donald Trump,25.27237806
+Donald Trump,-2.431008065
+Donald Trump,35.60050384
+Donald Trump,-63.69942688
+Donald Trump,-21.45291335
+Donald Trump,-8.372896958
+Donald Trump,-31.12224354
+Donald Trump,-2.779240871
+Donald Trump,-67.42394402
+Donald Trump,-97.64950236
+Donald Trump,-60.72874045
+Donald Trump,-63.69942688
+Donald Trump,99.26174388
+Donald Trump,-179.2104591
+Donald Trump,-41.9852322
+Donald Trump,-43.07826523
+Donald Trump,-2.431008065
+Donald Trump,-111.8693383
+Donald Trump,-117.5772086
+Donald Trump,-63.69942688
+Donald Trump,12.74442549
+Donald Trump,-17.89816937
+Donald Trump,77.79704867
+Donald Trump,-17.89816937
+Donald Trump,-5.22177278
+Donald Trump,22.24501457
+Donald Trump,-87.36584099
+Donald Trump,-29.32388642
+Donald Trump,-88.88416699
+Donald Trump,-94.21258475
+Donald Trump,6.916492749
+Donald Trump,-94.21258475
+Donald Trump,-103.6849643
+Donald Trump,-38.7133575
+Donald Trump,-43.07826523
+Donald Trump,-9.074780863
+Donald Trump,-77.54144442
+Donald Trump,57.38453429
+Donald Trump,26.94869459
+Donald Trump,-59.6168724
+Donald Trump,-80.17869085
+Donald Trump,5.193819716
+Donald Trump,-63.69942688
+Donald Trump,65.95094092
+Donald Trump,-104.9336657
+Donald Trump,-97.64950236
+Donald Trump,-104.549397
+Donald Trump,-62.21309461
+Donald Trump,-80.55590722
+Donald Trump,-80.9332956
+Donald Trump,-63.69942688
+Donald Trump,11.71925012
+Donald Trump,-1.299960982
+Donald Trump,-5.22177278
+Donald Trump,-73.78390149
+Donald Trump,-21.80923059
+Donald Trump,-63.69942688
+Donald Trump,-5.22177278
+Donald Trump,11.71925012
+Donald Trump,-30.7623141
+Donald Trump,23.92846948
+Donald Trump,-117.5772086
+Donald Trump,22.24501457
+Donald Trump,-5.920990542
+Donald Trump,65.95094092
+Donald Trump,60.88948157
+Donald Trump,-11.88825081
+Donald Trump,-82.06597677
+Donald Trump,-117.5772086
+Donald Trump,51.60536618
+Donald Trump,54.5017446
+Donald Trump,28.6209689
+Donald Trump,-143.4668427
+Donald Trump,-21.45299935
+Donald Trump,-0.344191366
+Donald Trump,-11.88825081
+Donald Trump,-15.06474635
+Donald Trump,74.39332885
+Donald Trump,-63.69942688
+Donald Trump,27.95254081
+Donald Trump,-77.54135842
+Donald Trump,54.82279994
+Donald Trump,-80.55590722
+Donald Trump,-25.73766475
+Donald Trump,4.503718447
+Donald Trump,13.08594993
+Donald Trump,36.92179319
+Donald Trump,-63.69942688
+Donald Trump,40.5419867
+Donald Trump,23.7603304
+Donald Trump,-63.69942688
+Donald Trump,16.1516715
+Donald Trump,-18.25302454
+Donald Trump,-17.89808337
+Donald Trump,-82.06597677
+Donald Trump,-60.35806043
+Donald Trump,-61.84181256
+Donald Trump,46.09762874
+Donald Trump,-21.80923059
+Donald Trump,-30.40247067
+Donald Trump,24.26474765
+Donald Trump,239.7438806
+Donald Trump,20.55760344
+Donald Trump,10.00749968
+Donald Trump,-2.43092206
+Donald Trump,25.27237806
+Donald Trump,-2.43092206
+Donald Trump,20.55760344
+Donald Trump,-54.07464709
+Donald Trump,-19.67373526
+Donald Trump,-2.779240871
+Donald Trump,-111.8693383
+Donald Trump,15.81169514
+Donald Trump,34.27654834
+Donald Trump,-27.52896949
+Donald Trump,-154.1266884
+Donald Trump,23.00305951
+Donald Trump,-37.26280316
+Donald Trump,-17.89816937
+Donald Trump,22.24501457
+Donald Trump,239.1507926
+Donald Trump,10.00749968
+Donald Trump,0.697152872
+Donald Trump,5.883404957
+Donald Trump,-73.78390149
+Donald Trump,0.697152872
+Donald Trump,13.08586393
+Donald Trump,-128.4703848
+Donald Trump,-39.07646911
+Donald Trump,71.90487046
+Donald Trump,-15.06466035
+Donald Trump,-50.39605643
+Donald Trump,15.81169514
+Donald Trump,-34.00692533
+Donald Trump,61.20709673
+Donald Trump,-27.88769486
+Donald Trump,-266.7073704
+Donald Trump,10.00749968
+Donald Trump,206.5017954
+Donald Trump,93.60375631
+Donald Trump,-40.89340323
+Donald Trump,-15.06474635
+Donald Trump,10.00749968
+Donald Trump,-1.299960982
+Donald Trump,-15.06466035
+Donald Trump,-47.73722284
+Donald Trump,-63.69942688
+Donald Trump,117.2832431
+Donald Trump,-44.17250232
+Donald Trump,-15.41839745
+Donald Trump,-59.98738041
+Donald Trump,-67.05094188
+Donald Trump,117.2832431
+Donald Trump,80.25936165
+Donald Trump,6.916492749
+Donald Trump,-365.8314216
+Donald Trump,-63.69942688
+Donald Trump,-104.549311
+Donald Trump,-47.462524
+Donald Trump,-31.12224354
+Donald Trump,-34.36814484
+Donald Trump,-34.36814484
+Donald Trump,65.95094092
+Donald Trump,-34.36814484
+Donald Trump,284.1254595
+Donald Trump,0.697152872
+Donald Trump,-132.4764812
+Donald Trump,-63.69942688
+Donald Trump,-15.06474635
+Donald Trump,222.1629832
+Donald Trump,-17.89816937
+Donald Trump,65.95094092
+Donald Trump,-120.3906785
+Donald Trump,-57.02692853
+Donald Trump,23.7603304
+Donald Trump,11.37720965
+Donald Trump,-44.17250232
+Donald Trump,27.61806874
+Donald Trump,-64.07131096
+Donald Trump,15.81169514
+Donald Trump,-136.3937348
+Donald Trump,-104.549311
+Donald Trump,93.60375631
+Donald Trump,112.1209863
+Donald Trump,-108.012116
+Donald Trump,-267.1151184
+Donald Trump,-80.9332956
+Donald Trump,129.9376225
+Donald Trump,-63.69942688
+Donald Trump,-104.549311
+Donald Trump,5.538698341
+Donald Trump,48.69548503
+Donald Trump,61.20709673
+Donald Trump,-32.56350938
+Donald Trump,-40.89340323
+Donald Trump,-44.17250232
+Donald Trump,-51.86587581
+Donald Trump,-30.40247067
+Donald Trump,-63.69942688
+Donald Trump,-65.56013737
+Donald Trump,37.25170701
+Donald Trump,-47.462524
+Donald Trump,-15.06474635
+Donald Trump,-37.26280316
+Donald Trump,-79.04772977
+Donald Trump,-27.17041612
+Donald Trump,-21.09685412
+Donald Trump,-147.4080916
+Donald Trump,-27.52905549
+Donald Trump,-94.59401535
+Donald Trump,5.883404957
+Donald Trump,-34.00692533
+Donald Trump,-6.620724331
+Donald Trump,-70.41251942
+Donald Trump,37.91101862
+Donald Trump,-71.90968828
+Donald Trump,51.9278836
+Donald Trump,-55.18075283
+Donald Trump,-101.0951064
+Donald Trump,54.82271394
+Donald Trump,-2.43092206
+Donald Trump,-111.8693383
+Donald Trump,-50.76329626
+Donald Trump,-58.50620842
+Donald Trump,0.697152872
+Donald Trump,-63.69942688
+Donald Trump,15.81169514
+Donald Trump,-30.7623141
+Donald Trump,-63.69942688
+Donald Trump,-95.73899518
+Donald Trump,-17.89808337
+Donald Trump,-63.69942688
+Donald Trump,-2.43092206
+Donald Trump,-147.4080916
+Donald Trump,-43.80767062
+Donald Trump,-80.17869085
+Donald Trump,15.81169514
+Donald Trump,-3.825143355
+Donald Trump,-114.9624954
+Donald Trump,-15.06474635
+Donald Trump,222.1629832
+Donald Trump,75.94304654
+Donald Trump,222.1629832
+Donald Trump,222.1629832
+Donald Trump,-104.549311
+Donald Trump,-94.59410135
+Donald Trump,-347.6877527
+Donald Trump,-5.22177278
+Donald Trump,-27.52896949
+Donald Trump,-1.299960982
+Donald Trump,-65.18773726
+Donald Trump,75.94304654
+Donald Trump,50.31374843
+Donald Trump,27.95254081
+Donald Trump,-18.25293853
+Donald Trump,-62.95600273
+Donald Trump,-63.69942688
+Donald Trump,-94.21258475
+Donald Trump,16.1516715
+Donald Trump,-21.45291335
+Donald Trump,27.95254081
+Donald Trump,-51.86587581
+Donald Trump,-34.36814484
+Donald Trump,-14.71118126
+Donald Trump,47.72251449
+Donald Trump,-15.06474635
+Donald Trump,43.48910786
+Donald Trump,25.27237806
+Donald Trump,-63.69942688
+Donald Trump,-21.45291335
+Donald Trump,15.81169514
+Donald Trump,-30.40247067
+Donald Trump,-63.69942688
+Donald Trump,109.5184858
+Donald Trump,-29.32388642
+Donald Trump,51.60536618
+Donald Trump,-106.4720308
+Donald Trump,13.08594993
+Donald Trump,-3.825143355
+Donald Trump,-77.1650881
+Donald Trump,-80.9332956
+Donald Trump,-0.691564125
+Donald Trump,-161.2647299
+Donald Trump,-64.07131096
+Donald Trump,42.50822489
+Donald Trump,-41.9852322
+Donald Trump,22.24501457
+Donald Trump,-80.93320959
+Donald Trump,-82.44379517
+Donald Trump,-63.69942688
+Donald Trump,-4.174064199
+Donald Trump,-9.074780863
+Donald Trump,20.89542968
+Donald Trump,5.538698341
+Donald Trump,-1.647763765
+Donald Trump,-63.69942688
+Donald Trump,28.28684086
+Donald Trump,-1.039108895
+Donald Trump,107.1930922
+Donald Trump,51.9278836
+Donald Trump,-111.8693383
+Donald Trump,46.09762874
+Donald Trump,31.28823095
+Donald Trump,-36.17622048
+Donald Trump,57.38462029
+Donald Trump,-63.69942688
+Donald Trump,-26.09570208
+Donald Trump,51.60536618
+Donald Trump,0.697152872
+Donald Trump,-66.21213858
+Donald Trump,-40.89340323
+Donald Trump,17.84940318
+Donald Trump,-63.69942688
+Donald Trump,-39.71195743
+Donald Trump,-63.3276288
+Donald Trump,99.26174388
+Donald Trump,-223.9694263
+Donald Trump,-162.0593268
+Donald Trump,-3.825143355
+Donald Trump,-6.970935244
+Donald Trump,-32.56350938
+Donald Trump,-30.7623141
+Donald Trump,-2.43092206
+Donald Trump,65.95094092
+Donald Trump,-162.0593268
+Donald Trump,-41.9852322
+Donald Trump,-39.07638311
+Donald Trump,-94.21267075
+Donald Trump,20.89534368
+Donald Trump,-63.69942688
+Donald Trump,-15.06466035
+Donald Trump,-40.89340323
+Donald Trump,-73.78390149
+Donald Trump,99.26174388
+Donald Trump,117.2832431
+Donald Trump,-73.7839875
+Donald Trump,-122.3338674
+Donald Trump,-162.0593268
+Donald Trump,-74.15913976
+Donald Trump,40.21370697
+Donald Trump,-31.12224354
+Donald Trump,15.81169514
+Donald Trump,-8.723795908
+Donald Trump,-170.0210348
+Donald Trump,74.39332885
+Donald Trump,-117.5772086
+Donald Trump,-134.8257841
+Donald Trump,-67.42403003
+Donald Trump,30.95539298
+Donald Trump,44.79465837
+Donald Trump,32.9500987
+Donald Trump,-27.88769486
+Donald Trump,-27.08088529
+Donald Trump,-63.69942688
+Donald Trump,24.26474765
+Donald Trump,16.1517575
+Donald Trump,-111.4831775
+Donald Trump,15.81169514
+Donald Trump,65.95094092
+Donald Trump,13.08594993
+Donald Trump,11.71925012
+Donald Trump,-15.06474635
+Donald Trump,-108.3973308
+Donald Trump,54.82279994
+Donald Trump,-63.69942688
+Donald Trump,222.1629832
+Donald Trump,-104.9336657
+Donald Trump,72.21655129
+Donald Trump,-63.69942688
+Donald Trump,-104.9336657
+Donald Trump,-57.02692853
+Donald Trump,-104.9336657
+Donald Trump,-134.0422818
+Donald Trump,-104.9336657
+Donald Trump,-125.8376107
+Donald Trump,31.28823095
+Donald Trump,-104.9336657
+Donald Trump,60.25373524
+Donald Trump,-108.3973308
+Donald Trump,15.81169514
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,-31.12224354
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,-118.8377786
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,-15.06474635
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,-63.69942688
+Donald Trump,-104.9336657
+Donald Trump,-2.779326876
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,-6.970935244
+Donald Trump,-118.8377786
+Donald Trump,-43.80767062
+Donald Trump,-64.07131096
+Donald Trump,-143.0731995
+Donald Trump,-143.0731995
+Donald Trump,-143.0731995
+Donald Trump,-143.0731995
+Donald Trump,-143.0731995
+Donald Trump,-143.0731995
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,65.95094092
+Donald Trump,-104.9336657
+Donald Trump,-104.9336657
+Donald Trump,22.24501457
+Donald Trump,-5.920990542
+Donald Trump,-80.17869085
+Donald Trump,-27.88778086
+Donald Trump,21.90787636
+Donald Trump,-116.8988899
+Donald Trump,229.8751057
+Donald Trump,-162.0593268
+Donald Trump,21.90787636
+Donald Trump,-162.0593268
+Donald Trump,-162.0593268
+Donald Trump,11.71925012
+Donald Trump,21.90787636
+Donald Trump,-162.0593268
+Donald Trump,-60.35806043
+Donald Trump,-162.0593268
+Donald Trump,-21.45299935
+Donald Trump,34.60775222
+Donald Trump,-21.45299935
+Donald Trump,-21.45299935
+Donald Trump,-162.0593268
+Donald Trump,27.95254081
+Donald Trump,-34.36814484
+Donald Trump,-21.45299935
+Donald Trump,-78.67094342
+Donald Trump,-47.462524
+Donald Trump,-94.21258475
+Donald Trump,45.77210116
+Donald Trump,-28.51578678
+Donald Trump,27.95254081
+Donald Trump,10.00749968
+Donald Trump,11.71925012
+Donald Trump,-67.05094188
+Donald Trump,13.08586393
+Donald Trump,-30.7623141
+Donald Trump,52.250143
+Donald Trump,-34.36814484
+Donald Trump,22.24501457
+Donald Trump,22.24501457
+Donald Trump,-114.9624954
+Donald Trump,-21.45299935
+Donald Trump,-94.59401535
+Donald Trump,-122.3338674
+Donald Trump,-2.431008065
+Donald Trump,-154.1266884
+Donald Trump,27.95254081
+Donald Trump,-61.84181256
+Donald Trump,-104.9336657
+Donald Trump,15.81169514
+Donald Trump,-162.0593268
+Donald Trump,-143.0731135
+Donald Trump,-162.0593268
+Donald Trump,10.00749968
+Donald Trump,-162.0593268
+Donald Trump,12.40290104
+Donald Trump,-95.26184141
+Donald Trump,-11.88825081
+Donald Trump,-87.36584099
+Donald Trump,-162.0593268
+Donald Trump,15.81169514
+Donald Trump,-162.0593268
+Donald Trump,21.90787636
+Donald Trump,-162.0593268
+Donald Trump,16.49156185
+Donald Trump,-30.40247067
+Donald Trump,22.24501457
+Donald Trump,-3.825143355
+Donald Trump,-75.28545659
+Donald Trump,-18.25293853
+Donald Trump,-70.03848522
+Donald Trump,-27.88769486
+Donald Trump,21.90787636
+Donald Trump,65.95094092
+Donald Trump,-74.15913976
+Donald Trump,-35.81431294
+Donald Trump,-48.56166336
+Donald Trump,-3.825143355
+Donald Trump,-34.36814484
+Donald Trump,0.697152872
+Donald Trump,-11.88825081
+Donald Trump,-162.0593268
+Donald Trump,-73.78390149
+Donald Trump,-162.0593268
+Donald Trump,21.90787636
+Donald Trump,57.38453429
+Donald Trump,-63.69942688
+Donald Trump,-23.9498862
+Donald Trump,-11.88825081
+Donald Trump,27.95254081
+Donald Trump,-162.0593268
+Donald Trump,-65.37393731
+Donald Trump,18.86615009
+Donald Trump,-81.31076998
+Donald Trump,-104.549311
+Donald Trump,-3.825143355
+Donald Trump,-2.779240871
+Donald Trump,9.664685166
+Donald Trump,-34.36814484
+Donald Trump,-30.7623141
+Donald Trump,-365.8314216
+Donald Trump,27.95254081
+Donald Trump,-80.55590722
+Donald Trump,-1.734714461
+Donald Trump,-80.55590722
+Donald Trump,64.6896828
+Donald Trump,-89.2640495
+Donald Trump,-80.55590722
+Donald Trump,-34.36814484
+Donald Trump,66.58058092
+Donald Trump,-80.55590722
+Donald Trump,20.89542968
+Donald Trump,-26.09570208
+Donald Trump,-62.21309461
+Donald Trump,51.60536618
+Donald Trump,25.27237806
+Donald Trump,-40.89331723
+Donald Trump,-87.36584099
+Donald Trump,-111.0971026
+Donald Trump,-4.086855489
+Donald Trump,57.38453429
+Donald Trump,-60.72874045
+Donald Trump,-50.39597042
+Donald Trump,22.58206677
+Donald Trump,-16.48021079
+Donald Trump,3.81310115
+Donald Trump,-0.691564125
+Donald Trump,-150.1717648
+Donald Trump,-80.55590722
+Donald Trump,-80.55590722
+Donald Trump,-30.7623141
+Donald Trump,-12.85752315
+Donald Trump,63.10917545
+Donald Trump,-2.082775258
+Donald Trump,50.31374843
+Donald Trump,40.21370697
+Donald Trump,-67.42394402
+Donald Trump,64.6896828
+Donald Trump,-80.55590722
+Donald Trump,-145.0423618
+Donald Trump,-28.96464502
+Donald Trump,-35.81431294
+Donald Trump,-84.33460729
+Donald Trump,-162.0593268
+Donald Trump,-365.8314216
+Donald Trump,42.83530055
+Donald Trump,19.20475038
+Donald Trump,25.60796819
+Donald Trump,-118.4498117
+Donald Trump,18.86615009
+Donald Trump,69.09226057
+Donald Trump,-50.39597042
+Donald Trump,-162.0593268
+Donald Trump,35.60050384
+Donald Trump,-80.55590722
+Donald Trump,68.77894564
+Donald Trump,-2.43092206
+Donald Trump,-80.55590722
+Donald Trump,64.6896828
+Donald Trump,-2.43092206
+Donald Trump,-14.2694614
+Donald Trump,90.90157638
+Donald Trump,-2.43092206
+Donald Trump,-50.0289026
+Donald Trump,-94.21267075
+Donald Trump,-12.24061183
+Donald Trump,-94.59401535
+Donald Trump,-34.36814484
+Donald Trump,6.916492749
+Donald Trump,-83.57793842
+Donald Trump,-132.0852461
+Donald Trump,47.72251449
+Donald Trump,-27.88769486
+Donald Trump,43.48910786
+Donald Trump,54.82279994
+Donald Trump,41.52579383
+Donald Trump,-2.43092206
+Donald Trump,-116.8988899
+Donald Trump,-75.28554259
+Donald Trump,-24.66458479
+Donald Trump,-80.55590722
+Donald Trump,-4.086855489
+Donald Trump,-63.3276288
+Donald Trump,54.82271394
+Donald Trump,-19.67382127
+Donald Trump,14.1944638
+Donald Trump,-101.0951064
+Donald Trump,64.6896828
+Donald Trump,22.58206677
+Donald Trump,-60.72874045
+Donald Trump,-84.99701506
+Donald Trump,64.6896828
+Donald Trump,-78.57676833
+Donald Trump,-52.23371767
+Donald Trump,-17.89816937
+Donald Trump,64.6896828
+Donald Trump,17.51020086
+Donald Trump,25.60796819
+Donald Trump,-162.0593268
+Donald Trump,-80.55590722
+Donald Trump,-63.69942688
+Donald Trump,-5.22177278
+Donald Trump,3.813015145
+Donald Trump,-37.62522674
+Donald Trump,180.6250619
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,9.35456E-11

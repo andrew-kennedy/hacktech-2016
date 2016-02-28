@@ -10,7 +10,7 @@
 #########################
 
 library(tm)
-library(SnowballCC)
+library(SnowballC)
 #library(RColorBrewer)
 #library(ggplot2)
 library(wordcloud)
@@ -19,7 +19,8 @@ library(wordcloud)
 #library(fpc)
 #library(igraph)
 
-input_data=tweet_x$status
+
+getTop10 = function(input_data) {
 # Create Corpus
 
 docs <- Corpus(VectorSource(input_data))
@@ -58,4 +59,6 @@ dtms <- removeSparseTerms(dtm, 0.1) # This makes a matrix that is 10% empty spac
 #inspect(dtms)
 
 # Get rid of terms with frequncy > length of data table
-top_10=head(sort(freq[sapply(freq, function(x) sum(x) < len(input_data))],decreasing = TRUE),10)
+top_10=head(sort(freq[sapply(freq, function(x) sum(x) < length(input_data))],decreasing = TRUE),10)
+return(top_10)
+}
