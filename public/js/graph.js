@@ -8,8 +8,8 @@ var insertGraph = function () {
         MG.data_graphic({
             title: "Labeling Lines",
             data: data,
-            full_width : true,
             height: 200,
+            width: 600,
             animate_on_load: true,
             missing_is_hidden: true,
             brushing: true,
