@@ -9,7 +9,7 @@ var insertGraph = function () {
             title: "Labeling Lines",
             data: data,
             height: 200,
-            width: 600,
+            full_width: true,
             animate_on_load: true,
             missing_is_hidden: true,
             brushing: true,
