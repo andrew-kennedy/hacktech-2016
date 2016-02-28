@@ -26,10 +26,13 @@ var insertGraph = function () {
                 for (var j = 1; j <= numCandidates; j++) {
                     var id ="c"+j;
                     var domElement = document.getElementsByClassName(id)[0];
-                    document.getElementsByClassName(id)[0].style.visibility = "visible";
 
-                    console.log(domElement.innerHTML);
-                    domElement.innerHTML = d.values[j-1].value.toFixed(2);
+                    if(d.values[j-1] != undefined) {
+                        document.getElementsByClassName(id)[0].style.visibility = "visible";
+                        domElement.innerHTML = d.values[j - 1].value.toFixed(2);
+                    }
+                    //console.log(domElement.innerHTML);
+
 
 
                 }
