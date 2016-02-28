@@ -17,7 +17,7 @@ html {
 }
 
 .graph-container {
-    flex-grow: 3;
+    flex: 3;
     color: red;
     margin: 5px;
     align-self: center;
