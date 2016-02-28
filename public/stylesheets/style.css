@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+.top-page {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+}
+
+.graph-container {
+    flex-grow: 3;
+    color: red;
+}
+
+.graph-info {
+    flex-grow: 1;
+    color: black;
+}
+
+#info-panels {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: bisque;
+}

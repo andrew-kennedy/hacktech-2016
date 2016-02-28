@@ -118,7 +118,7 @@ checkRemainingSearches = function(callback)
     if(err) console.log(err);
     callback(data);
   });
-}
+};
 
 checkRemainingSearches(function(data) {
   var limit = data['resources']['search']['/search/tweets']['limit'];
@@ -140,7 +140,7 @@ checkRemainingSearches(function(data) {
 });
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Polisense' });
 });
 
 
